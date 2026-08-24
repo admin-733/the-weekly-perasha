@@ -15,7 +15,7 @@ import markdown
 SITE_NAME = "The Weekly Perasha"
 SITE_TAGLINE = "Practical life lessons from the Torah"
 SITE_URL = "https://theweeklyperasha.com"
-AUTHOR = "Morris Shasho"
+AUTHOR = "Moshe Shasho"
 
 # AdSense: replace with your publisher ID after approval
 ADSENSE_ID = ""  # e.g., "ca-pub-1234567890"
