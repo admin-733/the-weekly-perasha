@@ -206,13 +206,13 @@ def ad_slot(slot_type="in-article"):
 
 def build_article_page(article):
     prev_next = ""  # Could add prev/next navigation here
-    return f"""{head(f"Parashat {article['parsha']}: {article['title']}", article['summary'], article['url'])}
+    return f"""{head(f"Perashat {article['parsha']}: {article['title']}", article['summary'], article['url'])}
 <body>
 {nav()}
 <main>
     <article class="article-page">
         <header class="article-header">
-            <span class="article-parsha">Parashat {article['parsha']}</span>
+            <span class="article-parsha">Perashat {article['parsha']}</span>
             <h1>{article['title']}</h1>
             <time datetime="{article['date'].strftime('%Y-%m-%d')}">{article['date_display']}</time>
         </header>
@@ -237,7 +237,7 @@ def build_home_page(articles):
         <div class="this-week-label">This Week's Perasha</div>
         <article class="home-article">
             <header class="home-article-header">
-                <span class="home-parsha-name">Parashat {a['parsha']}</span>
+                <span class="home-parsha-name">Perashat {a['parsha']}</span>
                 <h2><a href="{a['url']}">{a['title']}</a></h2>
                 <time datetime="{a['date'].strftime('%Y-%m-%d')}">{a['date_display']}</time>
             </header>
@@ -255,7 +255,7 @@ def build_home_page(articles):
     for a in articles[1:8]:
         prev_items += f"""<li>
             <a href="{a['url']}">
-                <span class="prev-parsha">Parashat {a['parsha']}</span>
+                <span class="prev-parsha">Perashat {a['parsha']}</span>
                 <span class="prev-title">{a['title']}</span>
                 <time>{a['date_display']}</time>
             </a>
@@ -322,7 +322,7 @@ def build_archive_page(articles):
     for year in sorted(by_year.keys(), reverse=True):
         items = ""
         for a in sorted(by_year[year], key=lambda x: x["parsha_order"]):
-            items += f'<li><a href="{a["url"]}"><strong>Parashat {a["parsha"]}</strong>: {a["title"]}</a> <time>{a["date_display"]}</time></li>\n'
+            items += f'<li><a href="{a["url"]}"><strong>Perashat {a["parsha"]}</strong>: {a["title"]}</a> <time>{a["date_display"]}</time></li>\n'
         year_html += f"""<div class="archive-year">
             <h3>{year}</h3>
             <ul>{items}</ul>
@@ -430,7 +430,7 @@ def build_rss_feed(articles):
         pub_date = a["date"].strftime("%a, %d %b %Y 00:00:00 +0000")
         summary = a["summary"] or a["title"]
         items += f"""    <item>
-      <title>Parashat {a['parsha']}: {a['title']}</title>
+      <title>Perashat {a['parsha']}: {a['title']}</title>
       <link>{SITE_URL}{a['url']}</link>
       <guid>{SITE_URL}{a['url']}</guid>
       <pubDate>{pub_date}</pubDate>
