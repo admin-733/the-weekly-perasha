@@ -25,26 +25,28 @@ FORMSPREE_ID = ""  # e.g., "xyzabcde"
 
 # Parshiyot in order, grouped by book
 PARSHIYOT_BY_BOOK = {
-    "Bereshit (Genesis)": [
-        "Bereshit", "Noach", "Lech Lecha", "Vayera", "Chayei Sarah",
-        "Toldot", "Vayetze", "Vayishlach", "Vayeshev", "Miketz",
-        "Vayigash", "Vayechi"
+    "Beresheet (Genesis)": [
+        "Beresheet", "Noah", "Lech Lecha", "Vayera", "Haye Sarah",
+        "Toldot", "Vayese", "Vayishlah", "Vayesheb", "Miqess",
+        "Vayigash", "Vayehi"
     ],
     "Shemot (Exodus)": [
-        "Shemot", "Vaera", "Bo", "Beshalach", "Yitro", "Mishpatim",
-        "Terumah", "Tetzaveh", "Ki Tisa", "Vayakhel", "Pekudei"
+        "Shemot", "Vaera", "Bo", "Beshalah", "Yitro", "Mishpatim",
+        "Terumah", "Tesave", "Ki Tisa", "Vayaqhel", "Pequde"
     ],
-    "Vayikra (Leviticus)": [
-        "Vayikra", "Tzav", "Shemini", "Tazria", "Metzora",
-        "Acharei Mot", "Kedoshim", "Emor", "Behar", "Bechukotai"
+    "Vayiqra (Leviticus)": [
+        "Vayiqra", "Sav", "Shemini", "Tazria", "Mesora",
+        "Aharei Mot", "Qedoshim", "Aharei-Qedoshim", "Emor", "Behar", "Behuqotai",
+        "Behar-Behuqotai"
     ],
-    "Bamidbar (Numbers)": [
-        "Bamidbar", "Naso", "Behaalotecha", "Shelach", "Korach",
-        "Chukat", "Balak", "Pinchas", "Matot", "Masei"
+    "Bemidbar (Numbers)": [
+        "Bemidbar", "Naso", "Behaalotecha", "Shelah", "Qorah",
+        "Huqat", "Balaq", "Huqat-Balaq", "Pinhas", "Matot", "Masei",
+        "Matot-Masei"
     ],
-    "Devarim (Deuteronomy)": [
-        "Devarim", "Vaetchanan", "Ekev", "Re'eh", "Shoftim",
-        "Ki Tetze", "Ki Tavo", "Nitzavim", "Vayelech", "Haazinu",
+    "Debarim (Deuteronomy)": [
+        "Debarim", "Va'ethanan", "Eqeb", "Re'eh", "Shofetim",
+        "Ki Tese", "Ki Tabo", "Nisabim", "Vayelech", "Ha'azinu",
         "Vezot Haberachah"
     ],
 }
@@ -115,6 +117,7 @@ def read_articles(content_dir):
         articles.append({
             "title": meta["title"],
             "parsha": meta["parsha"],
+            "author": meta.get("author", AUTHOR),
             "book": PARSHA_TO_BOOK.get(meta["parsha"].lower(), ""),
             "year": year,
             "date": date,
@@ -215,7 +218,7 @@ def build_article_page(article):
             <span class="article-parsha">Perashat {article['parsha']}</span>
             <h1>{article['title']}</h1>
             <div class="article-meta">
-                <span class="article-author">By {AUTHOR}</span>
+                <span class="article-author">By {article['author']}</span>
                 <time datetime="{article['date'].strftime('%Y-%m-%d')}">{article['date_display']}</time>
             </div>
         </header>
@@ -243,7 +246,7 @@ def build_home_page(articles):
                 <span class="home-parsha-name">Perashat {a['parsha']}</span>
                 <h2><a href="{a['url']}">{a['title']}</a></h2>
                 <div class="article-meta">
-                    <span class="article-author">By {AUTHOR}</span>
+                    <span class="article-author">By {a['author']}</span>
                     <time datetime="{a['date'].strftime('%Y-%m-%d')}">{a['date_display']}</time>
                 </div>
             </header>
