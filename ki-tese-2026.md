@@ -1,0 +1,25 @@
+---
+title: "Lost Souls"
+parsha: "Ki Tese"
+year: 2026
+date: 2026-08-21
+summary: "The Torah's command to return lost objects carries a deeper message — we must never turn away from a lost soul."
+---
+
+Have you ever walked down Ocean Parkway, minding your own business, and spotted a few coins, or even a shiny $20 bill just lying there? It's as if it was placed there specifically for you. Chances are that you didn't walk past it. You went right over to it, before anyone else could, and picked it up. You'd be in luck, because money (or more specifically coins) on its own generally does not have to be returned to its owner unless certain exceptions apply (Baba Mesi'a 21a).
+
+Our perasha introduces the commandment of returning a lost object to its owner (Debarim 22:1-3). The Torah states "if you find an animal or garment or any other lost object," and instructs you on what to do next. The Gemara explains that this involves looking for any identifying marks or signs to track down the owner (Baba Mesi'a 21a, 27a-28b). If you cannot find the owner immediately, you must hold onto the object until you can.
+
+When commanding the finder to return the lost property to its owner, the Torah uses the words "הָשֵׁב תְּשִׁיבֵם לְאָחִיךָ" translated as "you must take it back to your brother" (Debarim 22:1). The Torah deliberately chose to use a word or phrase that shares its root with teshubah or repentance. In fact the Ohr HaHayim picks up on this wording and reads the pesukim with a deeper meaning.
+
+The Ohr HaHayim teaches (Debarim 22:1) that the words "when you see your brother's ox," refers to a lost human soul, not necessarily only a lost object. The basic misva, yes, is referring to lost objects. On a deeper level though, the message is directed to include lost and wayward souls who have strayed from the path of the Torah, and from G-d through their actions and behavior, so much so their behavior is compared to that of an animal. These lost souls belong to G-d, and we are commanded to return them, through assisted teshubah, back to G-d.
+
+The next pasuk, the Ohr HaHayim continues, teaches, that if your brother is not near you, meaning he is so lost, that his faith and his path forward is foreign to him, that you must bring him into your home, nourish him with Torah, and guide him until he is ready to be found.
+
+There's one more thing. The Torah understands human tendencies. Therefore the Torah includes a warning of sorts stating, "do not ignore it" and later "do not be indifferent" (Debarim 22:1,3). In other words, if you see money lying in the street, you run towards it, knowing it's most likely yours to keep. With any other object, you might just want to cross the street and pretend you never found it in the first place. Your initial reaction might be to ignore it. Let it be someone else's problem you think to yourself. So the Torah tells you, don't do that, you found it, you must now go through the process to return the object to its owner.
+
+This idea extends to lost human souls as well. Often we encounter people who have lost their way, whether from the Torah or for any other reason. Perhaps he has fallen on difficult times. He lost his job, his spouse, or those who he holds dear to him. Something is weighing heavily on him. He cannot continue on his own. Perhaps this may even occur in our own homes. It is easy to look the other way, to tell ourselves the problem will resolve on its own, or that someone else will take care of it. You might even ask yourself, who am I to help? What can I possibly do to bring someone back to the light? The Torah therefore tells you: do not ignore him, do not be indifferent. Care for him, watch over him. Bring him in and open your heart. Any kind gesture such as a smile or other kind act, will show him that you care, that someone cares, and this will make a world of difference to him. We may not all know how to care for a wayward soul, and it may very well be beyond our capabilities, but we can certainly enlist the help of those who are equipped to do so. G-d brought this person into your midst. It was not by accident. Take him in, nurture him, care for him, until he is ready to stand on his own again, until he is ready to be himself again, close to G-d.
+
+We are now counting the days until Rosh Hashanah, until we stand in judgement before G-d. There will be those amongst us that may feel due to their actions, due to their sins, that they are not even worthy of standing before G-d on that day. Or worse, they fear what judgement will be brought upon them. You may feel beyond lost. Know this: G-d still loves you. He still wants you back. I know this for a fact because I was once at that point, and I needed the same encouragement. Someone found me, and convinced me and helped me to return to G-d.
+
+Even if you have committed a sin so grave, that you feel there is no way back, there is. There is always a way back. G-d will not turn you away. Use the next 30 days or so, take small steps. Every step is another victory in the path to return, on the path to teshubah, to be found and reunited with G-d.
