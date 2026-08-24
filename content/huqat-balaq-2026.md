@@ -1,0 +1,17 @@
+---
+title: "There's Always a Way Back"
+parsha: "Huqat-Balaq"
+year: 2026
+date: 2026-06-27
+summary: ""
+---
+
+The first perasha this week, Huqat, begins as follows: "G-d spoke to Moshe and to Aharon, saying, this is the huqat of the Torah, which G-d has commanded you to say to the people" (Bemidbar 19:1-2). The Torah goes on to tell us all about the red heifer and all of its laws. The word huqat or hok is a law that must be followed whether it is accompanied by logic and understanding or not. We are already familiar with the paradox of the red heifer, that it purifies those who come in contact with a corpse, yet those performing the purification become impure themselves.
+
+Now, to borrow a phrase from Pesah, what makes this statute different from all others? In other words, this isn't the first statute that the Torah has recorded. One very obvious law that may jump out at you, amongst others, is sha'atnez, the prohibition of wearing a garment made up of both wool and linen. Yet it seems that the Torah is emphasizing the statute here, that this isn't just a statute, this is the top trump statute of the Torah! What is so special about the red heifer that it earns this title?
+
+Rashi explains (Bemidbar 19:2) that Satan and the nations of the world would continuously mock the Jewish People for the misvot, especially this one. They would ask how it can be that a ritual that purifies one party makes the other impure? G-d therefore presented this as a hok, a decree without logic, so the Jewish People would have an answer ready: we do this simply because G-d commanded it.
+
+A few words later, Rashi cites Rav Moshe Hadarshan (Midrash Rabbah, Bemidar) who explains that the purpose of the red heifer was to atone for the sin of the golden calf. If so, then this isn't a statute at all, there is a clear reason. It may not explain the paradox but we understand the need for it at the very least. Rabbi Farhi takes this further and says that this statute is not directed at the Jewish People but at the nations of the world. Its message is that there is always a way back, always a path to teshuvah. The nations knew that the sin of the golden calf was the gravest of all sins. When they discover that there exists a korban, a path back, even for that, they are astounded. That is what makes this the hok of the Torah, the one that stands above all others, it is a statute or hok, a lesson for the nations of the world, there is always a way back.
+
+No matter what you have done, no matter how many times you have stumbled, G-d does not give up on you and we should not give up on ourselves. There is a famous pasuk in Ezekial that states, G-d does not delight in the death of the wicked (Ezekiel 33:11). In other words, even the wicked, G-d prefers and desires their repentance. The Lubavitcher Rebbe, whose yahrzeit was last week, taught that whatever you are struggling with most right now, that is your mission. That is precisely where G-d wants your attention. The struggle itself is the sign. Often we receive nudges, small hints that we are drifting from where we should be. Those are G-d's way of calling us back. He knows we will come to knis late sometimes. He knows we will say things we shouldn't, give less than we could, and fall short of our best. He is not surprised by any of it. What He wants is for us to keep trying, to keep returning. Even if you've sinned one million times, the door is never closed. Take advantage of that. Show G-d you are serious, one step at a time.
