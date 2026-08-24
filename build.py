@@ -214,7 +214,10 @@ def build_article_page(article):
         <header class="article-header">
             <span class="article-parsha">Perashat {article['parsha']}</span>
             <h1>{article['title']}</h1>
-            <time datetime="{article['date'].strftime('%Y-%m-%d')}">{article['date_display']}</time>
+            <div class="article-meta">
+                <span class="article-author">By {AUTHOR}</span>
+                <time datetime="{article['date'].strftime('%Y-%m-%d')}">{article['date_display']}</time>
+            </div>
         </header>
         <div class="article-body">
             {article['html']}
@@ -239,7 +242,10 @@ def build_home_page(articles):
             <header class="home-article-header">
                 <span class="home-parsha-name">Perashat {a['parsha']}</span>
                 <h2><a href="{a['url']}">{a['title']}</a></h2>
-                <time datetime="{a['date'].strftime('%Y-%m-%d')}">{a['date_display']}</time>
+                <div class="article-meta">
+                    <span class="article-author">By {AUTHOR}</span>
+                    <time datetime="{a['date'].strftime('%Y-%m-%d')}">{a['date_display']}</time>
+                </div>
             </header>
             <div class="home-article-body">
                 {a['html']}
