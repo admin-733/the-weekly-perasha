@@ -1,0 +1,626 @@
+/* ─── The Weekly Perasha ─── */
+
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ─── Palette ─── */
+:root {
+    --bg: #FAFAF8;
+    --surface: #F0EDE6;
+    --text: #1C1C28;
+    --text-secondary: #55556A;
+    --accent: #8B6914;
+    --accent-hover: #A37D1A;
+    --accent-light: #F7F1E3;
+    --border: #D8D3C8;
+    --sage: #5B6E5D;
+    --white: #FFFFFF;
+}
+
+/* ─── Base ─── */
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lora', Georgia, 'Times New Roman', serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+}
+
+main { flex: 1; }
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.15s;
+}
+a:hover { color: var(--accent-hover); }
+
+img { max-width: 100%; height: auto; }
+
+/* ─── Navigation ─── */
+nav {
+    border-bottom: 1px solid var(--border);
+    background: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-name {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--text);
+    letter-spacing: -0.01em;
+}
+.site-name:hover { color: var(--accent); }
+
+.nav-links {
+    display: flex;
+    gap: 1.8rem;
+}
+
+.nav-links a {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.nav-links a:hover,
+.nav-links a.active { color: var(--text); }
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--text);
+    padding: 0.25rem;
+}
+
+/* ─── Home Header ─── */
+.home-header {
+    text-align: center;
+    padding: 2.5rem 1.5rem 1.5rem;
+}
+
+.home-header h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 0.3rem;
+}
+
+.home-header p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* ─── This Week's Article (on homepage) ─── */
+.this-week {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.this-week-label {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--accent);
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 1.5rem;
+}
+
+.home-article-header {
+    margin-bottom: 1.75rem;
+}
+
+.home-parsha-name {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--sage);
+}
+
+.home-article-header h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0.25rem 0 0.4rem;
+    line-height: 1.2;
+}
+
+.home-article-header h2 a {
+    color: inherit;
+}
+.home-article-header h2 a:hover {
+    color: var(--accent);
+}
+
+.home-article-header time {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.home-article-body {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.home-article-body p { margin-bottom: 1.3rem; }
+
+.home-article-body h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin: 2rem 0 0.8rem;
+}
+
+.home-article-body h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.6rem;
+}
+
+.home-article-body blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    margin: 1.5rem 0;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.home-article-body ul, .home-article-body ol {
+    margin: 1rem 0 1.3rem 1.5rem;
+}
+
+.home-article-body li { margin-bottom: 0.4rem; }
+
+.home-article-body strong { font-weight: 600; }
+
+.home-article-share {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.home-article-share a {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+.home-article-share a:hover { color: var(--accent); }
+
+/* ─── Previous Divrei Torah ─── */
+.previous {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 3rem;
+}
+
+.previous h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.previous ul {
+    list-style: none;
+    padding: 0;
+}
+
+.previous li {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.previous li a {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    padding: 0.65rem 0;
+    color: var(--text);
+    transition: color 0.15s;
+}
+.previous li a:hover { color: var(--accent); }
+
+.prev-parsha {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--sage);
+    white-space: nowrap;
+    min-width: 120px;
+}
+
+.prev-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    flex: 1;
+}
+
+.previous li time {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.browse-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+}
+
+/* ─── Article Page ─── */
+.article-page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 3rem;
+}
+
+.article-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.article-parsha {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--sage);
+}
+
+.article-header h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0.3rem 0 0.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.article-header time {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+}
+
+.article-body {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.article-body p { margin-bottom: 1.3rem; }
+
+.article-body h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2rem 0 0.8rem;
+}
+
+.article-body h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.6rem;
+}
+
+.article-body blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    margin: 1.5rem 0;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.article-body ul, .article-body ol {
+    margin: 1rem 0 1.3rem 1.5rem;
+}
+
+.article-body li { margin-bottom: 0.4rem; }
+
+.article-body strong { font-weight: 600; }
+
+.article-body em { font-style: italic; }
+
+.article-footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.article-footer a {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* ─── Page Content (Archive, About, Feedback) ─── */
+.page-content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 3rem;
+}
+
+.page-content h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+/* ─── Archive ─── */
+.archive-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.tab {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: none;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.15s;
+}
+.tab:hover { color: var(--text); }
+.tab.active {
+    color: var(--text);
+    border-bottom-color: var(--accent);
+}
+
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+.archive-book {
+    margin-bottom: 2rem;
+}
+
+.archive-book h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.archive-book ul, .archive-year ul {
+    list-style: none;
+    padding: 0;
+}
+
+.archive-book li, .archive-year li {
+    padding: 0.4rem 0;
+    font-size: 0.92rem;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+.parsha-name {
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.archive-year {
+    margin-bottom: 2rem;
+}
+
+.archive-year h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.archive-year li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.archive-year li time {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+/* ─── About ─── */
+.about-body p {
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+}
+
+/* ─── Feedback Form ─── */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.feedback-form label {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 0.5rem;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 0.92rem;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--white);
+    color: var(--text);
+    transition: border-color 0.15s;
+    width: 100%;
+}
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.feedback-form button {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.75rem;
+    align-self: flex-start;
+    transition: background 0.15s;
+}
+.feedback-form button:hover { background: var(--accent-hover); }
+
+.feedback-placeholder {
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: 6px;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+/* ─── Ads ─── */
+.ad-container {
+    max-width: 680px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+/* ─── Footer ─── */
+footer {
+    border-top: 1px solid var(--border);
+    background: var(--white);
+    margin-top: auto;
+}
+
+.footer-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+}
+
+.footer-tagline {
+    font-family: 'Lora', Georgia, serif;
+    font-style: italic;
+    margin-top: 0.3rem;
+}
+
+/* ─── Mobile ─── */
+@media (max-width: 640px) {
+    html { font-size: 16px; }
+
+    .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--border); padding: 1rem 1.5rem; gap: 1rem; }
+    .nav-links.open { display: flex; }
+    .nav-toggle { display: block; }
+
+    .home-header { padding: 2rem 1.25rem 1rem; }
+    .home-header h1 { font-size: 1.8rem; }
+
+    .this-week { padding: 0 1.25rem; }
+    .home-article-header h2 { font-size: 1.6rem; }
+
+    .previous { padding: 2rem 1.25rem; }
+    .previous li a {
+        flex-direction: column;
+        gap: 0.15rem;
+    }
+    .prev-parsha { min-width: unset; }
+
+    .article-page { padding: 1.5rem 1.25rem 2rem; }
+    .article-header h1 { font-size: 1.7rem; }
+
+    .page-content { padding: 1.5rem 1.25rem 2rem; }
+    .page-content h1 { font-size: 1.6rem; }
+
+    .archive-year li a {
+        flex-direction: column;
+        gap: 0.15rem;
+    }
+}
+
+/* ─── Print ─── */
+@media print {
+    nav, footer, .ad-container, .article-footer { display: none; }
+    .article-page { max-width: 100%; padding: 0; }
+    body { font-size: 12pt; }
+}
