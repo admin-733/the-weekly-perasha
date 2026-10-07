@@ -475,21 +475,26 @@ def build_about_page():
         <h1>About</h1>
         <div class="about-body">
             <p>
-                Every week, Jews around the world read and study the same Torah portion.
-                <strong>{SITE_NAME}</strong> takes these timeless texts and draws out
-                practical lessons you can apply in your daily life — at work, at home,
-                and in your relationships.
+                Thanks for visiting. My name is Moshe. I've been a baal koreh for over
+                30 years. Reading the Torah week after week has taught me to slow down
+                with the text and catch what I'd otherwise miss. A repeated word, an
+                unusual phrase, a detail that doesn't seem to fit until it does. That's
+                where most of my articles start.
             </p>
             <p>
-                This isn't academic analysis or abstract philosophy. It's Torah wisdom
-                made real: concrete takeaways you can act on starting Monday morning.
+                I grew up in a Sephardic home and I write the way I learned: perasha by
+                perasha, with the commentators I grew up on and the questions real life
+                puts in front of you. I've been writing these articles weekly for about
+                three years now. If one idea stays with you during your week, it did its job.
             </p>
             <p>
-                Written by <strong>{AUTHOR}</strong>, who believes the Torah was given
-                not just to study, but to live.
+                I also run <a href="https://ms-teach.com">MS-Teach</a>, my AI consulting
+                company, where I help people and businesses get practical with AI and
+                Microsoft tools.
             </p>
             <p>
-                Have thoughts or feedback? <a href="/feedback/">I'd love to hear from you.</a>
+                Have a question or comment on an article?
+                <a href="/feedback/">I'd like to hear it.</a>
             </p>
         </div>
     </div>
