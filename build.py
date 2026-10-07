@@ -175,7 +175,14 @@ def nav(active=""):
         </div>
         <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
     </div>
-</nav>"""
+</nav>
+<div id="hebrew-date-bar" class="hebrew-date-bar" style="display:none;">
+    <div class="hebrew-date-inner">
+        <span id="heb-date"></span>
+        <span class="heb-sep">&#xB7;</span>
+        <span id="heb-parsha"></span>
+    </div>
+</div>"""
 
 
 def footer():
@@ -186,6 +193,94 @@ def footer():
         <p class="footer-tagline">{SITE_TAGLINE}</p>
     </div>
 </footer>
+<script>
+(function() {{
+  var bar = document.getElementById('hebrew-date-bar');
+  var dateEl = document.getElementById('heb-date');
+  var parshaEl = document.getElementById('heb-parsha');
+  if (!bar) return;
+
+  var now = new Date();
+  var gy = now.getFullYear();
+  var gm = now.getMonth() + 1;
+  var gd = now.getDate();
+
+  // Fetch Hebrew date
+  fetch('https://www.hebcal.com/converter?cfg=json&g2h=1&gy=' + gy + '&gm=' + gm + '&gd=' + gd)
+    .then(function(r) {{ return r.json(); }})
+    .then(function(d) {{
+      if (d.hebrew) {{
+        dateEl.textContent = d.hebrew;
+        bar.style.display = '';
+      }}
+    }})
+    .catch(function() {{}});
+
+  // Sephardic transliteration map
+  var seph = {{
+    "Bereshit":"Beresheet","Noach":"Noah","Lech-Lecha":"Lech Lecha",
+    "Chayei Sara":"Haye Sarah","Vayetzei":"Vayese","Vayishlach":"Vayishlah",
+    "Vayeshev":"Vayesheb","Miketz":"Miqess","Vayechi":"Vayehi",
+    "Sh'mot":"Shemot","Shemot":"Shemot","Va'eira":"Vaera","Va'era":"Vaera",
+    "B'shalach":"Beshalah","Beshalach":"Beshalah",
+    "Mishpatim":"Mishpatim","T'rumah":"Terumah",
+    "Tetzaveh":"Tesave","T'tzaveh":"Tesave",
+    "Vayak'hel":"Vayaqhel","Vayakhel":"Vayaqhel",
+    "P'kudei":"Pequde","Pekudei":"Pequde",
+    "Tzav":"Sav","Sh'mini":"Shemini","Shemini":"Shemini",
+    "Tazria":"Tazria","Metzora":"Mesora","M'tzora":"Mesora",
+    "Achrei Mot":"Aharei Mot","Acharei Mot":"Aharei Mot",
+    "Kedoshim":"Qedoshim","K'doshim":"Qedoshim",
+    "B'har":"Behar","Behar":"Behar",
+    "Bechukotai":"Behuqotai","B'chukotai":"Behuqotai",
+    "B'midbar":"Bemidbar","Bamidbar":"Bemidbar",
+    "Nasso":"Naso","Beha'alotcha":"Behaalotecha","B'ha'alot'cha":"Behaalotecha",
+    "Sh'lach":"Shelah","Shelach":"Shelah",
+    "Korach":"Qorah","Chukat":"Huqat",
+    "Balak":"Balaq","Pinchas":"Pinhas",
+    "D'varim":"Debarim","Devarim":"Debarim",
+    "Va'etchanan":"Va'ethanan","Vaetchanan":"Va'ethanan",
+    "Eikev":"Eqeb","Ekev":"Eqeb",
+    "Shoftim":"Shofetim",
+    "Ki Teitzei":"Ki Tese","Ki Tetze":"Ki Tese",
+    "Ki Tavo":"Ki Tabo",
+    "Nitzavim":"Nisabim",
+    "Vayeilech":"Vayelech","Ha'azinu":"Ha'azinu",
+    "V'Zot HaB'rachah":"Vezot Haberachah","Vezot Haberachah":"Vezot Haberachah"
+  }};
+
+  // Fetch parsha + holidays (NYC geo)
+  fetch('https://www.hebcal.com/shabbat?cfg=json&geonameid=5128581&M=on&b=18')
+    .then(function(r) {{ return r.json(); }})
+    .then(function(d) {{
+      var parts = [];
+      if (d.items) {{
+        for (var i = 0; i < d.items.length; i++) {{
+          var item = d.items[i];
+          if (item.category === 'parashat') {{
+            var name = item.title.replace('Parashat ', '');
+            // Handle double parshiyot
+            var segs = name.split('-');
+            var mapped = [];
+            for (var j = 0; j < segs.length; j++) {{
+              var s = segs[j].trim();
+              mapped.push(seph[s] || s);
+            }}
+            parts.push('Perashat ' + mapped.join('-'));
+          }}
+          if (item.category === 'holiday') {{
+            parts.push(item.title);
+          }}
+        }}
+      }}
+      if (parts.length > 0) {{
+        parshaEl.textContent = parts.join(' \\xB7 ');
+        bar.style.display = '';
+      }}
+    }})
+    .catch(function() {{}});
+}})();
+</script>
 </body>
 </html>"""
 
