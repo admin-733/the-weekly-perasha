@@ -4,6 +4,7 @@ parsha: "Va'ethanan"
 year: 2025
 date: 2025-08-09
 summary: ""
+author: "Yaakob & Moshe Shasho"
 ---
 
 At the start of this week's perasha, Va'ethanan, we encounter one of the most personal moments in the Torah. Moshe continued his final speech to the nation before his passing. He describes his desperate plea to G-d: "I implored (Va'ethanan) G-d at that time, saying... 'Please, let me cross over and see the good land that is on the other side of the Jordan...'" (Debarim 3:23-25).
