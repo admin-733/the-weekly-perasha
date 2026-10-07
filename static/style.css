@@ -518,61 +518,15 @@ nav {
     line-height: 1.8;
 }
 
-/* ─── Feedback Form ─── */
-.feedback-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+/* ─── Feedback ─── */
+.feedback-body p {
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
 }
 
-.feedback-form label {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-    font-size: 0.82rem;
+.feedback-body a {
+    color: var(--accent);
     font-weight: 600;
-    color: var(--text);
-    margin-top: 0.5rem;
-}
-
-.feedback-form input,
-.feedback-form textarea {
-    font-family: 'Lora', Georgia, serif;
-    font-size: 0.92rem;
-    padding: 0.7rem 0.9rem;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    background: var(--white);
-    color: var(--text);
-    transition: border-color 0.15s;
-    width: 100%;
-}
-.feedback-form input:focus,
-.feedback-form textarea:focus {
-    outline: none;
-    border-color: var(--accent);
-}
-
-.feedback-form button {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-    font-size: 0.88rem;
-    font-weight: 600;
-    padding: 0.75rem 1.5rem;
-    background: var(--accent);
-    color: var(--white);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 0.75rem;
-    align-self: flex-start;
-    transition: background 0.15s;
-}
-.feedback-form button:hover { background: var(--accent-hover); }
-
-.feedback-placeholder {
-    background: var(--surface);
-    padding: 2rem;
-    border-radius: 6px;
-    color: var(--text-secondary);
-    text-align: center;
 }
 
 /* ─── Ads ─── */

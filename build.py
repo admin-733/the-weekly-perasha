@@ -20,8 +20,6 @@ AUTHOR = "Moshe Shasho"
 # AdSense: replace with your publisher ID after approval
 ADSENSE_ID = ""  # e.g., "ca-pub-1234567890"
 
-# Formspree: replace with your form ID after signup
-FORMSPREE_ID = ""  # e.g., "xyzabcde"
 
 # Parshiyot in order, grouped by book
 PARSHIYOT_BY_BOOK = {
@@ -503,21 +501,6 @@ def build_about_page():
 
 
 def build_feedback_page():
-    if FORMSPREE_ID:
-        form = f"""<form action="https://formspree.io/f/{FORMSPREE_ID}" method="POST" class="feedback-form">
-            <label for="name">Name (optional)</label>
-            <input type="text" id="name" name="name" placeholder="Your name">
-            <label for="email">Email (optional)</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com">
-            <label for="message">Your feedback</label>
-            <textarea id="message" name="message" rows="6" placeholder="What did you think? Any parsha you'd like covered?" required></textarea>
-            <button type="submit">Send Feedback</button>
-        </form>"""
-    else:
-        form = """<div class="feedback-placeholder">
-            <p>Feedback form coming soon. In the meantime, feel free to reach out directly.</p>
-        </div>"""
-
     return f"""{head("Feedback", "Share your thoughts and feedback", "/feedback/")}
 <body>
 {nav("feedback")}
@@ -528,7 +511,13 @@ def build_feedback_page():
             Enjoyed a Dvar Torah? Have a question? Want to suggest a topic?
             I'd love to hear from you.
         </p>
-        {form}
+        <div class="feedback-body">
+            <p>
+                Send me an email at
+                <a href="mailto:moshe@theweeklyperasha.com">moshe@theweeklyperasha.com</a>
+                and I'll get back to you.
+            </p>
+        </div>
     </div>
 </main>
 {footer()}"""
