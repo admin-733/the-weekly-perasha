@@ -166,7 +166,15 @@ def nav(active=""):
         return ' class="active"' if active == name else ""
     return f"""<nav>
     <div class="nav-inner">
-        <a href="/" class="site-name">{SITE_NAME}</a>
+        <div class="nav-left">
+            <a href="/" class="site-name">{SITE_NAME}</a>
+            <span id="heb-info" class="heb-info" style="display:none;">
+                <span class="heb-sep">&#xB7;</span>
+                <span id="heb-date"></span>
+                <span class="heb-sep">&#xB7;</span>
+                <span id="heb-parsha"></span>
+            </span>
+        </div>
         <div class="nav-links">
             <a href="/"{cls("home")}>Home</a>
             <a href="/archive/"{cls("archive")}>Archive</a>
@@ -175,14 +183,7 @@ def nav(active=""):
         </div>
         <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
     </div>
-</nav>
-<div id="hebrew-date-bar" class="hebrew-date-bar" style="display:none;">
-    <div class="hebrew-date-inner">
-        <span id="heb-date"></span>
-        <span class="heb-sep">&#xB7;</span>
-        <span id="heb-parsha"></span>
-    </div>
-</div>"""
+</nav>"""
 
 
 def footer():
@@ -195,10 +196,10 @@ def footer():
 </footer>
 <script>
 (function() {{
-  var bar = document.getElementById('hebrew-date-bar');
+  var info = document.getElementById('heb-info');
   var dateEl = document.getElementById('heb-date');
   var parshaEl = document.getElementById('heb-parsha');
-  if (!bar) return;
+  if (!info) return;
 
   var now = new Date();
   var gy = now.getFullYear();
@@ -211,7 +212,7 @@ def footer():
     .then(function(d) {{
       if (d.hebrew) {{
         dateEl.textContent = d.hebrew;
-        bar.style.display = '';
+        info.style.display = '';
       }}
     }})
     .catch(function() {{}});
@@ -275,7 +276,7 @@ def footer():
       }}
       if (parts.length > 0) {{
         parshaEl.textContent = parts.join(' \\xB7 ');
-        bar.style.display = '';
+        info.style.display = '';
       }}
     }})
     .catch(function() {{}});
