@@ -349,6 +349,17 @@ def build_home_page(articles):
     this_week = ""
     if articles:
         a = articles[0]
+        # Find previous years for the same parasha
+        same_parsha_home = [x for x in articles
+                           if x['parsha'] == a['parsha'] and x['slug'] != a['slug']]
+        same_parsha_home.sort(key=lambda x: x['date'], reverse=True)
+        prev_years_home = ""
+        if same_parsha_home:
+            py_links = ", ".join(
+                f'<a href="{x["url"]}">{x["date"].year}</a>' for x in same_parsha_home
+            )
+            prev_years_home = f' &middot; <span class="home-prev-years">Previous years: {py_links}</span>'
+
         this_week = f"""<section class="this-week">
         <div class="this-week-label">This Week's Perasha</div>
         <article class="home-article">
@@ -364,7 +375,7 @@ def build_home_page(articles):
                 {a['html']}
             </div>
             <div class="home-article-share">
-                <a href="{a['url']}">Permalink</a>
+                <a href="{a['url']}">Permalink</a>{prev_years_home}
             </div>
         </article>
     </section>"""

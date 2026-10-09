@@ -248,6 +248,16 @@ nav {
 }
 .home-article-share a:hover { color: var(--accent); }
 
+.home-prev-years {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+.home-prev-years a {
+    color: var(--accent);
+    font-weight: 600;
+}
+
 /* ─── Previous Divrei Torah ─── */
 .previous {
     max-width: 680px;
