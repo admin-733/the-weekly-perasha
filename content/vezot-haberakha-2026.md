@@ -2,7 +2,7 @@
 title: "Hatan Torah"
 parsha: "V'Zot HaB'rakhah"
 year: 2026
-date: 2026-10-12
+date: 2026-10-02
 summary: ""
 ---
 
