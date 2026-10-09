@@ -302,8 +302,22 @@ def ad_slot(slot_type="in-article"):
 
 # ─── Page Generators ─────────────────────────────────────────────
 
-def build_article_page(article):
-    prev_next = ""  # Could add prev/next navigation here
+def build_article_page(article, all_articles):
+    # Find other years for the same parasha
+    same_parsha = [a for a in all_articles
+                   if a['parsha'] == article['parsha'] and a['slug'] != article['slug']]
+    same_parsha.sort(key=lambda a: a['date'], reverse=True)
+
+    prev_years = ""
+    if same_parsha:
+        links = ""
+        for a in same_parsha:
+            links += f'<li><a href="{a["url"]}">{a["title"]}</a> <span class="prev-year-date">({a["date"].year})</span></li>\n'
+        prev_years = f"""<div class="prev-years">
+            <h3>Previous Years</h3>
+            <ul>{links}</ul>
+        </div>"""
+
     return f"""{head(f"Perashat {article['parsha']}: {article['title']}", article['summary'], article['url'])}
 <body>
 {nav()}
@@ -320,6 +334,7 @@ def build_article_page(article):
         <div class="article-body">
             {article['html']}
         </div>
+        {prev_years}
         {ad_slot()}
         <div class="article-footer">
             <a href="/archive/">&#8592; Browse all Divrei Torah</a>
@@ -598,7 +613,7 @@ def build():
         article_dir = os.path.join(output_dir, a["slug"])
         os.makedirs(article_dir, exist_ok=True)
         with open(os.path.join(article_dir, "index.html"), "w") as f:
-            f.write(build_article_page(a))
+            f.write(build_article_page(a, articles))
         print(f"  Built: {a['slug']}/")
 
     # Generate main pages

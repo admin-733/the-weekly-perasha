@@ -393,6 +393,43 @@ nav {
 
 .article-body em { font-style: italic; }
 
+/* ─── Previous Years ─── */
+.prev-years {
+    margin-top: 2.5rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--surface);
+    border-radius: 6px;
+}
+
+.prev-years h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 0.75rem;
+}
+
+.prev-years ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.prev-years li {
+    padding: 0.3rem 0;
+}
+
+.prev-years li a {
+    color: var(--accent);
+    font-size: 0.92rem;
+}
+
+.prev-year-date {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+}
+
 .article-footer {
     margin-top: 3rem;
     padding-top: 1.5rem;
