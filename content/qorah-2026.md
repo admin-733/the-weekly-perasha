@@ -2,7 +2,7 @@
 title: "Steady Heart"
 parsha: "Qorah"
 year: 2026
-date: 2026-06-20
+date: 2026-06-18
 summary: ""
 ---
 

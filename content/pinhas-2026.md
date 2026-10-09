@@ -2,7 +2,7 @@
 title: "Just One Act"
 parsha: "Pinhas"
 year: 2026
-date: 2026-07-04
+date: 2026-07-02
 summary: ""
 ---
 

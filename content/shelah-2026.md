@@ -2,7 +2,7 @@
 title: "Keeping The Faith Against All Odds"
 parsha: "Shelah"
 year: 2026
-date: 2026-06-13
+date: 2026-06-11
 summary: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "The Hidden Flame"
 parsha: "Tesave"
 year: 2026
-date: 2026-02-28
+date: 2026-02-26
 summary: ""
 ---
 

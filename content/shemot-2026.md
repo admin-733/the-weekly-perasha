@@ -2,7 +2,7 @@
 title: "Heroes Don't Always Wear Capes"
 parsha: "Shemot"
 year: 2026
-date: 2026-01-10
+date: 2026-01-08
 summary: ""
 ---
 

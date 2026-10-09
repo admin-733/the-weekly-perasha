@@ -2,7 +2,7 @@
 title: "Special Edition for Yom Ha'Atsmaut"
 parsha: "Yom Ha'Atsmaut"
 year: 2026
-date: 2026-04-22
+date: 2026-04-20
 summary: ""
 ---
 

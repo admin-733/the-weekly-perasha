@@ -2,7 +2,7 @@
 title: "Finding G-d In Every Moment"
 parsha: "Haye Sarah"
 year: 2025
-date: 2025-11-15
+date: 2025-11-13
 summary: ""
 ---
 

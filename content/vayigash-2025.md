@@ -2,7 +2,7 @@
 title: "A Measured Approach"
 parsha: "Vayigash"
 year: 2025
-date: 2025-12-27
+date: 2025-12-25
 summary: ""
 ---
 

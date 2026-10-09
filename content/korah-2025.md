@@ -2,7 +2,7 @@
 title: "Guarding Against Negative Influences"
 parsha: "Qorah"
 year: 2025
-date: 2025-06-28
+date: 2025-06-26
 summary: ""
 ---
 

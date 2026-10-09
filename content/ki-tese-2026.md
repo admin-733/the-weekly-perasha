@@ -2,7 +2,7 @@
 title: "Lost Souls"
 parsha: "Ki Tese"
 year: 2026
-date: 2026-08-21
+date: 2026-08-19
 summary: "The Torah's command to return lost objects carries a deeper message — we must never turn away from a lost soul."
 ---
 

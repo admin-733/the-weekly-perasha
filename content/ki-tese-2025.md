@@ -2,7 +2,7 @@
 title: "The Lesson of the Rebellious and Wayward Son"
 parsha: "Ki Tese"
 year: 2025
-date: 2025-09-06
+date: 2025-09-04
 summary: ""
 ---
 

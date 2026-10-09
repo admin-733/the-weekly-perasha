@@ -2,7 +2,7 @@
 title: "Is It a Blessing or a Curse?"
 parsha: "Ki Tabo"
 year: 2025
-date: 2025-09-13
+date: 2025-09-11
 summary: ""
 ---
 

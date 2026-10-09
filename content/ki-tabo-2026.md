@@ -2,7 +2,7 @@
 title: "Origin Story"
 parsha: "Ki Tabo"
 year: 2026
-date: 2026-08-29
+date: 2026-08-27
 summary: ""
 ---
 

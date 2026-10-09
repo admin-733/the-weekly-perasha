@@ -2,7 +2,7 @@
 title: "The Power of Transparency and Growth"
 parsha: "Pinhas"
 year: 2025
-date: 2025-07-19
+date: 2025-07-17
 summary: ""
 ---
 

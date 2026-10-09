@@ -2,7 +2,7 @@
 title: "Beyond Numbers"
 parsha: "Shelah"
 year: 2025
-date: 2025-06-21
+date: 2025-06-19
 summary: ""
 ---
 

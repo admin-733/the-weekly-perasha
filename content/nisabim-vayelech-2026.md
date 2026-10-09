@@ -2,7 +2,7 @@
 title: "Mission: Not Impossible"
 parsha: "Nisabim-Vayelech"
 year: 2026
-date: 2026-09-19
+date: 2026-09-17
 summary: ""
 ---
 

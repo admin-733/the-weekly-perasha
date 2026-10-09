@@ -2,7 +2,7 @@
 title: "Every Prayer Counts"
 parsha: "Va'ethanan"
 year: 2025
-date: 2025-08-09
+date: 2025-08-07
 summary: ""
 author: "Yaakob & Moshe Shasho"
 ---

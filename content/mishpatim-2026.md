@@ -2,7 +2,7 @@
 title: "G-d Knows Best"
 parsha: "Mishpatim"
 year: 2026
-date: 2026-02-14
+date: 2026-02-12
 summary: ""
 ---
 

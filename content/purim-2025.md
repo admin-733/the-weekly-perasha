@@ -2,7 +2,7 @@
 title: "The Power of Words"
 parsha: "Purim"
 year: 2025
-date: 2025-03-14
+date: 2025-03-12
 summary: ""
 ---
 

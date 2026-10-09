@@ -2,7 +2,7 @@
 title: "Speak Wisely"
 parsha: "Matot-Masei"
 year: 2026
-date: 2026-07-11
+date: 2026-07-09
 summary: ""
 ---
 

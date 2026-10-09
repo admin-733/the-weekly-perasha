@@ -2,7 +2,7 @@
 title: "It's All About Our Intentions"
 parsha: "Beresheet"
 year: 2025
-date: 2025-10-18
+date: 2025-10-16
 summary: ""
 ---
 

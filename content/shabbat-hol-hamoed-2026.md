@@ -2,7 +2,7 @@
 title: "Take It With You"
 parsha: "Shabbat Hol HaMoed"
 year: 2026
-date: 2026-04-04
+date: 2026-04-02
 summary: ""
 ---
 

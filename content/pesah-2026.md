@@ -2,7 +2,7 @@
 title: "We Left Egypt"
 parsha: "Pesah"
 year: 2026
-date: 2026-04-01
+date: 2026-03-30
 summary: ""
 ---
 

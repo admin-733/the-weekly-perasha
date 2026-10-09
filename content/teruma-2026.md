@@ -2,7 +2,7 @@
 title: "Home Is Where The Heart Is"
 parsha: "Terumah"
 year: 2026
-date: 2026-02-21
+date: 2026-02-19
 summary: ""
 ---
 

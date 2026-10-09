@@ -2,7 +2,7 @@
 title: "From Darkness to Light"
 parsha: "Miqess"
 year: 2025
-date: 2025-12-20
+date: 2025-12-18
 summary: ""
 ---
 

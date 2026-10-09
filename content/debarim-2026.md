@@ -2,7 +2,7 @@
 title: "Love Actually"
 parsha: "Debarim"
 year: 2026
-date: 2026-07-18
+date: 2026-07-16
 summary: ""
 ---
 

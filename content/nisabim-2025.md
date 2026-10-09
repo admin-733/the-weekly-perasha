@@ -2,7 +2,7 @@
 title: "It's Right in Front of You"
 parsha: "Nisabim"
 year: 2025
-date: 2025-09-20
+date: 2025-09-18
 summary: ""
 ---
 

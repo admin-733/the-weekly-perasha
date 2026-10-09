@@ -2,7 +2,7 @@
 title: "The Desert Express"
 parsha: "Masei"
 year: 2025
-date: 2025-07-26
+date: 2025-07-24
 summary: ""
 ---
 

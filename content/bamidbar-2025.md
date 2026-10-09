@@ -2,7 +2,7 @@
 title: "The Power of Unity"
 parsha: "Bamidbar"
 year: 2025
-date: 2025-05-31
+date: 2025-05-29
 summary: ""
 ---
 

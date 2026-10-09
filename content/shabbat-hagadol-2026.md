@@ -2,7 +2,7 @@
 title: "Under The Radar"
 parsha: "Shabbat HaGadol"
 year: 2026
-date: 2026-03-28
+date: 2026-03-26
 summary: ""
 ---
 

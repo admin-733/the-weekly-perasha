@@ -2,7 +2,7 @@
 title: "These Are The Days"
 parsha: "Ha'azinu"
 year: 2026
-date: 2026-09-26
+date: 2026-09-24
 summary: ""
 ---
 

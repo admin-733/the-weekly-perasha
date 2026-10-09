@@ -2,7 +2,7 @@
 title: "Pray To Me"
 parsha: "Va'ethanan"
 year: 2026
-date: 2026-07-25
+date: 2026-07-23
 summary: ""
 ---
 

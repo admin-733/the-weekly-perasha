@@ -2,7 +2,7 @@
 title: "Eyes Wide Open"
 parsha: "Balaq"
 year: 2025
-date: 2025-07-12
+date: 2025-07-10
 summary: ""
 ---
 

@@ -2,7 +2,7 @@
 title: "And Justice For All"
 parsha: "Shofetim"
 year: 2026
-date: 2026-08-15
+date: 2026-08-13
 summary: ""
 ---
 

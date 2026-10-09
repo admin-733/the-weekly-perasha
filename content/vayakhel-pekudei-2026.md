@@ -2,7 +2,7 @@
 title: "A Language of Love"
 parsha: "Vayakhel-Pekudei"
 year: 2026
-date: 2026-03-14
+date: 2026-03-12
 summary: ""
 ---
 

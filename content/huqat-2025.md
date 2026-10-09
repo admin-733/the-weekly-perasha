@@ -2,7 +2,7 @@
 title: "Striking the Rock, Speaking to the Heart"
 parsha: "Huqat"
 year: 2025
-date: 2025-07-05
+date: 2025-07-03
 summary: ""
 ---
 

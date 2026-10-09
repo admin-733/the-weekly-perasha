@@ -2,7 +2,7 @@
 title: "Do You Trust?"
 parsha: "Lech Lecha"
 year: 2025
-date: 2025-11-01
+date: 2025-10-30
 summary: ""
 ---
 

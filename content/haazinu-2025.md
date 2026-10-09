@@ -2,7 +2,7 @@
 title: "Speak Wisely and Listen Closely"
 parsha: "Ha'azinu"
 year: 2025
-date: 2025-10-04
+date: 2025-10-02
 summary: ""
 ---
 

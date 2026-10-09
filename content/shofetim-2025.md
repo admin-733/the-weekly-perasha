@@ -2,7 +2,7 @@
 title: "In Pursuit of Gratitude"
 parsha: "Shofetim"
 year: 2025
-date: 2025-08-30
+date: 2025-08-28
 summary: ""
 ---
 

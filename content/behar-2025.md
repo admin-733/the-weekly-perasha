@@ -2,7 +2,7 @@
 title: "Shemitah and Emuna"
 parsha: "Behar"
 year: 2025
-date: 2025-05-24
+date: 2025-05-22
 summary: ""
 ---
 

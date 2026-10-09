@@ -2,7 +2,7 @@
 title: "Wedding Day"
 parsha: "Shabuout"
 year: 2026
-date: 2026-05-22
+date: 2026-05-20
 summary: ""
 ---
 

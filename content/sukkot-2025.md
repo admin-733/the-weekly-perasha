@@ -2,7 +2,7 @@
 title: "Jews: Assemble!"
 parsha: "Sukkot"
 year: 2025
-date: 2025-10-11
+date: 2025-10-09
 summary: ""
 ---
 
