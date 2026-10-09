@@ -328,7 +328,7 @@ def build_article_page(article, all_articles):
             <h1>{article['title']}</h1>
             <div class="article-meta">
                 <span class="article-author">By {article['author']}</span>
-                <time datetime="{article['date'].strftime('%Y-%m-%d')}">{article['date_display']}</time>
+                <time datetime="{article['date'].strftime('%Y-%m-%d')}">Published {article['date_display']}</time>
             </div>
         </header>
         <div class="article-body">
@@ -357,7 +357,7 @@ def build_home_page(articles):
                 <h2><a href="{a['url']}">{a['title']}</a></h2>
                 <div class="article-meta">
                     <span class="article-author">By {a['author']}</span>
-                    <time datetime="{a['date'].strftime('%Y-%m-%d')}">{a['date_display']}</time>
+                    <time datetime="{a['date'].strftime('%Y-%m-%d')}">Published {a['date_display']}</time>
                 </div>
             </header>
             <div class="home-article-body">
