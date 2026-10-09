@@ -2,7 +2,7 @@
 title: "Continuing On"
 parsha: "Beresheet"
 year: 2026
-date: 2026-10-17
+date: 2026-10-10
 summary: ""
 ---
 
