@@ -280,6 +280,7 @@ def footer():
     .catch(function() {{}});
 }})();
 </script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "b93838a8f6c04bdcbc43c80559e4e149"}}'></script>
 </body>
 </html>"""
 
